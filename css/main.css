@@ -692,7 +692,10 @@ footer .block ul li a
             -ms-flex-align: center;
                 align-items: center;
         max-width: 100%;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .testimonials .swiper-container .card .profile .textBox
     {
