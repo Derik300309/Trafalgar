@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html,body
+{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html.active
+{
+    overflow-y: hidden;
+}
+.btn
+{
+    padding: 15px 35px;
+    background: #458FF6;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    width: auto;
+}
+.btn:hover
+{
+    background: #006aff;
+}
+.btn2
+{
+    padding: 10px 45px;
+    background: transparent;
+    border: 2px solid #458FF6;
+    color: #458FF6;
+}
+.btn2:hover
+{
+    color: #fff;
+}
+/***************NAVIGATION***************/
+nav
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 0 0 10px 10px;
+    -webkit-box-shadow: 0 0 10px #0000006e;
+            box-shadow: 0 0 10px #0000006e;
+}
+nav .logo
+{
+    position: relative;
+    max-width: 200px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            color: #111B47;
+}
+nav ul{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+    color: #111B47;
+}
+ ul:hover li a
+{
+    opacity: 0.5;
+}
+ ul li a:hover
+{
+    opacity: 1;
+}
+.toggleMenu
+{
+    display: none;
+}
+/***************HEADER***************/
+header
+{
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 40px;
+}
+header .content
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+header .content .textBox
+{
+    max-width: 40%;
+}
+header .content .textBox h1
+{
+    font-size: 3em;
+    font-weight: 600;
+}
+header .content .imgBox
+{
+    max-width: 40%;
+}
+header .content .imgBox img
+{
+    width: 100%;
+}
+/***********SERVICES**************/
+.services
+{
+    min-height: 100vh;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.services .content h2::after
+{
+    content: " ";
+	display: block;
+	height: 2px;
+	background: #000;
+	width: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: -50%;
+}
+.services .content .cards
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.services .content .cards .card
+{
+    min-width: 25%;
+    max-width: 30%;
+    min-height: 300px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 10px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 10px 20px 20px #0000002c;
+            box-shadow: 10px 20px 20px #0000002c;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+.services .content .cards .card:hover
+{
+    -webkit-box-shadow: 10px 20px 20px #0000004d;
+            box-shadow: 10px 20px 20px #0000004d;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+/****************APPS*****************/
+.apps
+{
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.apps .content
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+}
+.apps .content .card
+{
+    max-width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 10px;
+    text-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.apps .content .card .textBox
+{
+    max-width: 45%;
+    text-align: left;
+}
+.apps .content .card .imgBox
+{
+    max-width: 45%;
+}
+.apps .content .card .imgBox img
+{
+    width: 100%;
+}
+/*************TESTIMONIALS************/
+.testimonials
+{
+    min-height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0;
+}
+.testimonials .swiper-container
+{
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    text-align: center;
+}
+.testimonials .swiper-container .card
+{
+    background-image: -o-linear-gradient(45deg, #67C3F3, #5A98F2);
+    background-image: linear-gradient(45deg, #67C3F3, #5A98F2);
+    padding: 70px 40px;
+    border-radius: 20px;
+    color: #fff;
+}
+.testimonials .swiper-container .card h2::after
+{
+    content: " ";
+	display: block;
+	height: 2px;
+	background: #fff;
+	width: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: -50%;
+}
+.testimonials .swiper-container .card .profile
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+.testimonials .swiper-container .card .profile .imgBox
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 50%;
+}
+.testimonials .swiper-container .card .profile .imgBox img
+{
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.testimonials .swiper-container .card .profile .textBox
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 50%;
+}
+/**************ABOUT***************/
+.about
+{
+    min-height: 75vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+}
+.about h1
+{
+    font-size: 2em;
+}
+.about h1::after
+{
+    content: " ";
+	display: block;
+	height: 2px;
+	background: #000;
+	width: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: -50%;
+}
+.about .content .cards
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.about .content .cards .card
+{
+    max-width: 30%;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 30px #0000006c;
+            box-shadow: 0px 0px 30px #0000006c;
+    border-radius: 20px;
+    text-align: left;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.about .content .cards .card:hover
+{
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 40px #000000a1;
+            box-shadow: 0px 0px 40px #000000a1;
+}
+.about .content .cards .card .imgBox
+{
+    width: 100%;
+}
+.about .content .cards .card .imgBox img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+.about .content .cards .card .textBox
+{
+    width: 100%;
+    padding: 20px;
+}
+.about .content .cards .card .textBox p
+{
+    color: #868686;
+    font-size: 14px;
+}
+.about .content .cards .card .textBox a
+{
+    text-decoration: none;
+    color: #006aff;
+}
+/*****************FOOTER****************/
+footer
+{
+    min-height: 50vh;
+    background-image: -o-linear-gradient(45deg, #67C3F3, #5A98F2);
+    background-image: linear-gradient(45deg, #67C3F3, #5A98F2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+footer .content
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+footer .block
+{
+    max-width: 30%;
+    color: #fff;
+}
+footer .block ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/***************MEDIA**************/
+@media(max-width: 991px)
+{
+    body *
+    {
+        text-align: center;
+    }
+    /*************NAVIGATION*************/
+    nav
+    {
+        padding: 10px 10px 10px 100px;
+    }
+    nav .logo
+    {
+        position: relative;
+        max-width: 60px;
+    }
+    nav ul
+    {
+        position: fixed;
+        top: 0;left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    nav ul.active
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+    nav ul li a
+    {
+        display: inline-block;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+    nav ul li a:hover
+    {
+        color: #ed0223;
+    }
+    .toggleMenu
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+        top: 20;
+        right: 40;
+        display: block;
+        -webkit-filter: invert(1);
+                filter: invert(1);
+    }
+    .toggleMenu.active
+    {
+        background-position: center;
+        background-size: 20px;
+        background-image: url(../img/close.png);
+        background-repeat: no-repeat;
+        -webkit-filter: invert(1);
+                filter: invert(1);
+        position: fixed;
+        right: 10px;
+    }
+    /************HEADER***********/
+    header .content
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    header .content .textBox
+    {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    header .content .imgBox
+    {
+        max-width: 100%;
+    }
+    /*************SERVICES**********/
+    .services .content .cards
+    {
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+    }
+    .services .content .cards .card
+    {
+        min-width: 200px;
+        max-width: 250px;
+    }
+    /***************APPS*************/
+    .apps .content .card
+    {
+        max-width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .apps .content .card .textBox
+    {
+        max-width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .apps .content .card .imgBox
+    {
+        max-width: 100%;
+    }
+    /****************TESTIMONIALS**************/
+    .testimonials .swiper-container .card .profile
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .testimonials .swiper-container .card .profile .imgBox
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        max-width: 100%;
+    }
+    .testimonials .swiper-container .card .profile .textBox
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        max-width: 100%;
+    }
+    /**************ABOUT**********/
+    .about .content .cards
+    {
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+    }
+    .about .content .cards .card
+    {
+        max-width: 250px;
+        margin: 10px 20px;
+    }
+    /***************FOOTER************/
+    footer
+    {
+        padding: 25px 0;
+    }
+    footer .content
+    {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    footer .block
+    {
+        min-width: 200px;
+        max-width: 250px;
+        margin: 20px;
+    }
+}
