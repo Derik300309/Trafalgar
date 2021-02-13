@@ -689,6 +689,7 @@ footer .block ul li a
     .testimonials .swiper-container .card
     {
         padding: 15px 10px;
+        max-width: 100%;
     }
     .testimonials .swiper-container .card .profile
     {
