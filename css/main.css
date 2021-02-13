@@ -669,6 +669,10 @@ footer .block ul li a
         max-width: 100%;
     }
     /****************TESTIMONIALS**************/
+    .testimonials .swiper-container .card
+    {
+        padding: 20px 10px;
+    }
     .testimonials .swiper-container .card .profile
     {
         -webkit-box-orient: vertical;
