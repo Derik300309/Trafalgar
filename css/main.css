@@ -304,6 +304,17 @@ header .content .imgBox img
     max-width: 45%;
     text-align: left;
 }
+.apps .content .card .textBox h1::after
+{
+    content: " ";
+	display: block;
+	height: 2px;
+	background: #000;
+	width: 50px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+    border-radius: -50%;
+}
 .apps .content .card .imgBox
 {
     max-width: 45%;
@@ -663,6 +674,12 @@ footer .block ul li a
         max-width: 100%;
         text-align: center;
         margin: 20px 0;
+    }
+    .apps .content .card .textBox h1::after
+    {
+        margin: 0 auto;
+        margin-bottom: 30px;
+	    margin-top: 30px;
     }
     .apps .content .card .imgBox
     {
